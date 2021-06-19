@@ -1,0 +1,78 @@
+* {
+  box-sizing: border-box;
+}
+
+.game {
+  display: flex;
+}
+
+.board-area {
+  margin-right: 20px;
+}
+
+.board {
+  .row {
+    display: flex;
+
+    .row-piece {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      width: 80px;
+      height: 80px;
+
+      border: 2px solid black;
+
+      text-decoration: none;
+    }
+  }
+}
+
+.piece {
+  &.large {
+    font-size: 36px;
+  }
+  &.medium {
+    font-size: 24px;
+  }
+  &.small {
+    font-size: 12px;
+  }
+
+  &.red {
+    color: transparent;
+    text-shadow: 0 0 0 red;
+  }
+
+  &.blue {
+    color: transparent;
+    text-shadow: 0 0 0 blue;
+  }
+}
+
+.player-hand {
+  display: flex;
+
+  a {
+    text-decoration: none;
+  }
+
+  .piece {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 6px;
+  }
+}
+
+.current-turn {
+  h2 {
+    display: flex;
+    align-items: center;
+
+    span {
+      margin-left: 10px;
+    }
+  }
+}
