@@ -1,5 +1,6 @@
 node_modules/
 dist/
+elm-stuff/
 
 .parcel-cache/
 .cache/
